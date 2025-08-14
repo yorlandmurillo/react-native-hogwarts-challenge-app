@@ -47,3 +47,7 @@ cd ios && pod install && cd ..
 npx react-native run-ios
 
 ```
+
+### Preview
+
+[Ver video](./example.mp4)
