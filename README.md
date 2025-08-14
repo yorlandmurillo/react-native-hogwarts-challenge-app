@@ -51,3 +51,5 @@ npx react-native run-ios
 ### Preview
 
 [Ver video](./example.mp4)
+
+<video src="./example.mp4" controls width="400"></video>
