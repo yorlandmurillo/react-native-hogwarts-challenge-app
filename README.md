@@ -52,4 +52,4 @@ npx react-native run-ios
 
 [Ver video](./example_low.mp4)
 
-<video src="./example_low.mp4" controls width="400"></video>
+[🎥 Ver demo en video](https://raw.githubusercontent.com/yorlandmurillo/react-native-hogwarts-challenge-app/main/example_low.mp4)
