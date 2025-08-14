@@ -39,3 +39,11 @@ At the end I use this library to take the profile photo
 react-native-vision-camera
 
 ### iOS
+
+```sh
+# Install pod dependency
+cd ios && pod install && cd ..
+# Using npm
+npx react-native run-ios
+
+```
