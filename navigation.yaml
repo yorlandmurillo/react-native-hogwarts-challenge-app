@@ -1,0 +1,23 @@
+appId: org.reactjs.native.example.newHPChallenge
+---
+- launchApp
+- tapOn: "Characters"
+- tapOn:
+    point: 50%,45%
+    delay: 1000 
+- tapOn: "Characters, back"
+- scroll
+- tapOn: "Severus Snape"
+- tapOn: "Characters, back"
+- tapOn: "Go back"
+- tapOn: "Spells"
+- tapOn: "Go back"
+- tapOn: 
+    text: "Favorite House"
+    delay: 1000 
+- tapOn:
+    point: "50%,46%" 
+- tapOn: "Go back"
+- tapOn: "Favorite Characters"
+- tapOn: "Go back"
+- killApp
