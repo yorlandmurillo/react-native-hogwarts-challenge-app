@@ -12,29 +12,21 @@ storiesOf('Button', module)
   .add('Primary', () => (
     <Button
       title="Primary Button"
-      variant="primary"
+      backgroundColor="purple"
       onPress={() => console.log('Primary pressed')}
     />
   ))
   .add('Secondary', () => (
     <Button
       title="Secondary Button"
-      variant="secondary"
+      backgroundColor="#6c5ce7"
       onPress={() => console.log('Secondary pressed')}
     />
   ))
-  .add('Outline', () => (
+  .add('Custom color', () => (
     <Button
-      title="Outline Button"
-      variant="outline"
-      onPress={() => console.log('Outline pressed')}
-    />
-  ))
-  .add('Disabled', () => (
-    <Button
-      title="Disabled Button"
-      variant="primary"
-      disabled={true}
-      onPress={() => console.log('Should not work')}
+      title="Custom Button"
+      backgroundColor="#00b894"
+      onPress={() => console.log('Custom pressed')}
     />
   ));

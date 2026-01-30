@@ -1,4 +1,4 @@
-const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
 
 /**
  * Metro configuration
@@ -6,6 +6,12 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
  *
  * @type {import('@react-native/metro-config').MetroConfig}
  */
-const config = {};
+const defaultConfig = getDefaultConfig(__dirname);
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+// Required for @storybook/react-native - fixes loading and "promises never resolving" issues
+defaultConfig.resolver.resolverMainFields = [
+  'sbmodern',
+  ...(defaultConfig.resolver.resolverMainFields || ['react-native', 'browser', 'main']),
+];
+
+module.exports = mergeConfig(defaultConfig, {});

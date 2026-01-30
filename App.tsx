@@ -12,7 +12,7 @@ import FavoriteHouseScreen from './src/screens/FavoriteHouseScreen';
 import FavoriteCharactersScreen from './src/screens/FavoriteCharactersScreen';
 
 const Stack = createStackNavigator<any>();
-const SHOW_STORYBOOK = true; // Cambia a false para ver la app normal
+const SHOW_STORYBOOK = true; // Change to false to see normal app
 
 function App() {
 
