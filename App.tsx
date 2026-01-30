@@ -12,8 +12,14 @@ import FavoriteHouseScreen from './src/screens/FavoriteHouseScreen';
 import FavoriteCharactersScreen from './src/screens/FavoriteCharactersScreen';
 
 const Stack = createStackNavigator<any>();
+const SHOW_STORYBOOK = true; // Change to false to see normal app
 
 function App() {
+
+  if (SHOW_STORYBOOK) {
+    const Storybook = require('./.storybook').default;
+    return <Storybook />;
+  }
   return (
     <SafeAreaProvider>
       <NavigationContainer>

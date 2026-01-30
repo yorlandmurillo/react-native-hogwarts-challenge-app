@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import {FavoriteContext} from '../context/FavoriteContext';
+import { Button } from '../components/Button/Button';
 
 const {width} = Dimensions.get('window');
 const BUTTON_WIDTH = Math.min(320, Math.round(width * 0.88));
@@ -86,6 +87,7 @@ export default function HomeScreen({navigation}: any) {
             accessibilityRole="button">
             <Text style={styles.buttonText}>Favorite Characters</Text>
           </TouchableOpacity>
+          <Button title="yorli" onPress={()=>{}}/>
         </View>
 
         {/* <View style={styles.footer}>
